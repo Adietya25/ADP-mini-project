@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MahaTrip AI - Premium Maharashtra Travel Platform</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body onload="layout();homeInit()">
+<header class="hero"><div class="hero-content"><span class="badge">🌟 Premium Maharashtra Travel Platform</span><h1>Explore <span class="green">Maharashtra</span><br><span class="gradient-text">Like Never Before</span></h1><p>Luxury stays, forts, beaches, hill stations, food trails, smart planner and premium travel experiences in one advanced website.</p><div class="hero-buttons"><a class="btn" href="destinations.html">🗺️ Explore Destinations</a><a class="btn outline" href="hotels.html">🏨 Luxury Stays</a><a class="btn outline" href="planner.html">✈️ Create Trip</a></div><div class="search-card"><input id="homeSearch" placeholder="Search Nashik, Mumbai, Lonavala..."><button onclick="localStorage.setItem('searchPlace',homeSearch.value);location.href='destinations.html'">🔍 Search</button></div></div></header>
+<section class="highlights"><div class="section-title"><h2>Why Choose MahaTrip?</h2><p>Your complete travel companion for Maharashtra adventures</p></div><div class="features-grid"><div class="feature-box"><div class="feature-icon">🤖</div><h3>AI Powered Planner</h3><p>Intelligent trip planning based on budget, days, people and interests</p></div><div class="feature-box"><div class="feature-icon">💰</div><h3>Budget Breakdown</h3><p>Detailed cost analysis for hotels, food, activities and travel</p></div><div class="feature-box"><div class="feature-icon">🏨</div><h3>Premium Hotels</h3><p>Hand-picked luxury and comfort stays across all destinations</p></div><div class="feature-box"><div class="feature-icon">🍛</div><h3>Food Trails</h3><p>Authentic local cuisines and must-try dishes with locations</p></div><div class="feature-box"><div class="feature-icon">📍</div><h3>Tourist Places</h3><p>Timings, tickets, descriptions and map links for all attractions</p></div><div class="feature-box"><div class="feature-icon">📱</div><h3>Save & Share</h3><p>Save trips, download itineraries and share with friends</p></div></div></section>
+<section>
+<div class="section-title">
+<h2>Choose Your Travel Mood</h2>
+<p>Select your vibe and discover perfect places for your style</p>
+</div>
+<div class="mood-grid">
+<div class="mood-card">
+<div class="icon">🏔️</div>
+<h3>Hill Station Escape</h3>
+<p>Serene peaks, misty mornings, and peaceful resorts</p>
+<p class="muted">Lonavala, Mahabaleshwar, Matheran</p>
+<a href="destinations.html">Explore →</a>
+</div>
+<div class="mood-card">
+<div class="icon">🏖️</div>
+<h3>Beach Weekend</h3>
+<p>Sandy shores, sea breeze, and sunset views</p>
+<p class="muted">Alibaug, Ganpatipule, Tarkarli, Mumbai</p>
+<a href="destinations.html">Explore →</a>
+</div>
+<div class="mood-card">
+<div class="icon">🏰</div>
+<h3>Fort Adventure</h3>
+<p>Historic forts, trekking, and panoramic views</p>
+<p class="muted">Raigad, Sinhagad, Pratapgad, Daulatabad</p>
+<a href="destinations.html">Explore →</a>
+</div>
+<div class="mood-card">
+<div class="icon">🍛</div>
+<h3>Food Trail</h3>
+<p>Local cuisines, street food, and dining experiences</p>
+<p class="muted">Mumbai, Pune, Nashik, Kolhapur</p>
+<a href="destinations.html">Explore →</a>
+</div>
+</div>
+</section>
+<section><div class="section-title"><h2>🌟 Featured Destinations</h2><p>Premium cards with budget, season, and highlights for your perfect getaway.</p></div><div class="destination-grid" id="homeDest"></div></section>
+<section><div class="weather-box"><div class="weather-content"><span class="badge">🌤️ Today's Travel Weather</span><h2>Perfect Time To Explore</h2><p class="muted">Morning sightseeing, afternoon cafés and evening viewpoints are recommended for best experience.</p><button class="btn small" onclick="location.href='planner.html'">Plan Your Trip Now</button></div><div class="weather-grid"><div class="weather-card"><h4>🌆 Nashik</h4><h2>28°C</h2><p>Vineyard weather - Perfect for tours</p></div><div class="weather-card"><h4>🌊 Mumbai</h4><h2>31°C</h2><p>Marine evening - Beach vibes</p></div><div class="weather-card"><h4>☕ Pune</h4><h2>29°C</h2><p>Café hopping - Perfect weather</p></div><div class="weather-card"><h4>🌫️ Lonavala</h4><h2>24°C</h2><p>Hill station vibe - Cool and misty</p></div></div></div></section>
+<section><div class="section-title"><h2>🏨 Luxury Hotel Highlights</h2><p>Premium stays with views, comfort and nearby attractions across Maharashtra</p></div><div class="hotel-grid" id="homeHotels"></div></section><section class="cta-section"><div class="cta-box"><h2>Ready for Your Dream Trip?</h2><p>Plan your perfect Maharashtra adventure with AI-powered itineraries, budget tracking, and expert recommendations</p><a class="btn" href="planner.html">🚀 Start Planning Now</a></div></section><script src="app.js"></script></body></html>
